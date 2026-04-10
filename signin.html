@@ -2,8 +2,76 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="signin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>KinoLuxe</title>
     <style type="text/css">
+        @media screen and (max-width: 800px) {
+    body {
+        overflow-y: auto !important; 
+        overflow-x: hidden !important;
+    }
+
+    
+    .a1 {
+        margin-left: 0 !important;
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    
+    .d1 {
+        width: 90% !important; 
+        height: auto !important; 
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 30px !important;
+        padding-bottom: 40px !important; 
+    }
+
+    
+    .p1 {
+        margin-left: 0 !important;
+        text-align: center !important;
+        padding-top: 30px !important;
+    }
+
+    
+    #i1, #i2 {
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    
+    .b1 {
+        width: 85% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    
+    .i3 {
+        margin-left: 10% !important; 
+    }
+
+    .p2 {
+        display: inline-block !important;
+        margin-left: 10px !important;
+        margin-top: 31px !important; 
+    }
+
+    
+    #error {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+}
+
+
         body {
     position: relative;
     min-height: 100vh; 
@@ -139,7 +207,7 @@ function login() {
         return;
     }
 
-    // Պարզ ստուգում (ոչ իրական login)
+    
     if(email === "test@gmail.com" && pass === "1234"){
         window.location.href = "topoat.html";
     } else {
