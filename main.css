@@ -1,3 +1,37 @@
+@media (max-width: 768px) {
+    
+    .buttons button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    
+    .a1, .movies, .desc, #Like1, #Like2, #Like3, #Like4, #Like5 {
+        margin-left: 0 !important;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    
+    .descr {
+        margin-top: 10px !important;
+        width: 95%;
+        padding: 10px;
+    }
+
+    
+    .bodycolor {
+        margin-left: auto !important; 
+        margin-right: auto !important;
+        display: block !important;    
+        width: 80%;
+        float: none !important;        
+    }
+}
+}
+
 html, body {
     height: auto;
     overflow-y: auto;
@@ -7,7 +41,7 @@ body {
     position: relative;
     min-height: 100vh; 
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     margin:0;
     padding: 0;
 }
