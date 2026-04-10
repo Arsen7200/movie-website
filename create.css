@@ -1,3 +1,69 @@
+@media screen and (max-width: 800px) {
+    
+    
+    body {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    body::before {
+        position: fixed !important;
+        height: 100vh !important;
+    }
+
+    
+    .a1 {
+        margin-left: 0 !important;
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .bodycolor {
+        margin: 10px auto !important;
+        display: block !important;
+        float: none !important;
+    }
+
+    
+    #forms {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 20px !important; 
+        position: static !important;
+    }
+
+    .det {
+        width: 100% !important; 
+    }
+
+    #generateBtn {
+        width: 100% !important;
+    }
+
+    
+    #poster {
+        width: 90% !important; 
+        height: auto !important; 
+        min-height: 400px !important;
+        margin: 30px auto !important; 
+        position: static !important;
+        padding: 20px !important;
+    }
+
+    #movname {
+        font-size: 1.5em !important;
+    }
+
+    
+    .buttons button {
+        width: 90% !important;
+        margin: 5px auto !important;
+        display: block !important;
+    }
+}
+
 html, body {
     height: auto;
     overflow-y: auto;
