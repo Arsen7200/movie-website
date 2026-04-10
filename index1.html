@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">>
 <head>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>KinoLuxe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -18,13 +20,39 @@
 	<p class="a5">Ready to watch? Enter your email to create or restart your membership.</p>
 </div>
 </div>
-	<div class="i">
-		<input type="email" placeholder="Enter yoru Email">
-		<button class="g" onclick="location.href='topoat.html'">Get Started</button>
-	</div>
+	<form class="i" id="emailForm">
+    <input type="email" id="userEmail" placeholder="Enter your Email" required>
+    <button type="submit" class="g">Get Started</button>
+</form>
 
 
 <script>
+	
+    
+    const emailForm = document.getElementById("emailForm");
+    const emailInput = document.getElementById("userEmail");
+
+    // Սա փոխում է սխալի տեքստը անգլերենի
+    emailInput.oninvalid = function(e) {
+        e.target.setCustomValidity("");
+        if (!e.target.validity.valid) {
+            e.target.setCustomValidity("Please fill out this field");
+        }
+    };
+
+    // Սա մաքրում է սխալը, երբ սկսում ես գրել
+    emailInput.oninput = function(e) {
+        e.target.setCustomValidity("");
+    };
+
+    emailForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Կանխում է էջի թարմացումը
+        
+        if (emailInput.checkValidity()) {
+            console.log("Redirecting to topoat.html...");
+            window.location.href = "topoat.html";
+        }
+    });
     const logo = document.getElementById("logo");
 
     
