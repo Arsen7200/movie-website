@@ -1,3 +1,61 @@
+@media (max-width: 768px) {
+    
+    
+    .a1, .movies, .desc, #Like1, #Like2, #Like3, #Like4, #Like5 {
+        margin-left: 0 !important;
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    
+    .descr {
+        width: 95% !important;
+        margin-top: 20px !important; 
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: static !important;
+        text-align: center !important;
+    }
+
+    
+    #fam, #train, #conj, #gun, #high {
+        width: 80% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    
+    #p1, #p2, #p3, #p4, #p5 {
+        margin-left: 0 !important;
+        margin-top: 5px !important;
+        text-align: center !important;
+    }
+
+    
+    .buttons button {
+        display: block !important;
+        width: 90% !important;
+        margin: 10px auto !important;
+    }
+
+    
+    .bodycolor {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        display: block !important;
+    }
+
+    
+    .movie-card2, .movie-card3, .movie-card4, .movie-card5 {
+        margin-top: 40px !important;
+        text-align: center !important;
+    }
+}
+
+
 html, body {
     height: auto;
     overflow-y: auto;
@@ -18,7 +76,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: CadetBlue;
+    background-color: RosyBrown;
     opacity: 0.9; 
     z-index: -1; 
 }
@@ -86,37 +144,34 @@ margin-left: 150px;
 }
 
 
-#godf {
+#bet {
 	width:181px;
 	height:auto;
 	object-fit:contain;
 }
-#dark {
+#st1 {
 	width:181px;
 	height:auto;
 	object-fit:contain;
 }
-#inc {
+#luc {
 	width:181px;
 	height:auto;
 	object-fit:contain;
 	cursor:pointer;
 }
-#mat {
+#ck {
 	width:181px;
 
 	height:auto;
 	object-fit:contain;
 	
 }
-#cas {
+#ted {
 	width:181px;
 	height:auto;
 	object-fit:contain;
 	
-}
-.movie-card2 {
-	margin-top: 97px;
 }
 .desc {
 	margin-left: 206px;
@@ -124,6 +179,9 @@ margin-left: 150px;
 .descr {
 	width:613px;
 	margin-top:-323px;
+}
+.movie-card2 {
+	margin-top: 182px;
 }
 #Like1 {
 	display: inline-block;
@@ -135,7 +193,7 @@ margin-left: 150px;
 	margin-top:-20px;
 }
 .movie-card3 {
-	margin-top: 63px;
+	margin-top: 112px;
 }
 #Like2 {
 	display: inline-block;
@@ -147,7 +205,7 @@ margin-left: 150px;
 	margin-top:-20px;
 }
 .movie-card4 {
-	margin-top: 115px;
+	margin-top: 77px;
 }
 #Like3 {
 	display: inline-block;
