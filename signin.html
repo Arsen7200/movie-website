@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="signin.css">
+	<title>KinoLuxe</title>
+    <style type="text/css">
+        body {
+    position: relative;
+    min-height: 100vh; 
+    width: 100%;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("nkar1.jpg") no-repeat center/cover;
+    opacity: 0.7; 
+    z-index: -1; 
+}
+.a1 {
+        position: relative;
+    z-index: 1;
+margin-left: 150px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top:30px;
+    text-decoration: none;
+            font-size: 30px;
+            transition: color 1s linear;
+        
+}
+
+.d1 {
+    width:470px;
+    height:700px;
+    opacity:0.7;
+    background-color:black;
+    margin-left:741px;
+    margin-top:37px;
+    color: white;
+}
+.p1 {
+    font-size:30px;
+    margin-left:54px;
+    padding-top: 51px;
+}
+#i1 {
+    width:294px;
+    height:40px;
+    margin-left:54px;
+    border-radius: 5px;
+    padding-left:15px;
+}
+#i2{
+    width:294px;
+    padding-left:15px;
+    height:40px;
+    margin-left:54px;
+    margin-top:19px;
+    border-radius: 5px;
+}
+
+    .b1 {
+    width: 316px;
+    height: 40px;
+    margin-left: 54px;
+    margin-top: 19px;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;                
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    background-color: rgba(128, 0, 255, 0.7); 
+    font-size:17px;
+    display:block;
+}
+.i3 {
+    margin-left:54px;
+    margin-top:31px;
+    display:inline-block;
+}
+.p2 {
+    margin-left:72px;
+    margin-top:-20px;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+    margin-left:54px;
+}
+
+    </style>
+</head>
+<body>
+<a href="file:///D:/Рабочий стол/praktika proekt/index1.html" class="a1" id="logo">KinoLuxe</a>
+<div class="d1">
+<p class="p1"><b>Sign In</b></p>
+<input id="i1" type="text" placeholder="Email or mobile number">
+<input id="i2" type="password" placeholder="Password">
+<button class="b1" onclick="login()">Sign In</button>
+<input class="i3" type="checkbox">
+<p class="p2">Remember me</p>
+<p id="error"></p>
+</div>
+
+<script>
+    const logo = document.getElementById("logo");
+
+    
+    const colors = ["red", "magenta", "gold", "lightblue"];
+
+    let i = 0;
+
+    setInterval(() => {
+        logo.style.color = colors[i];
+        i = (i + 1) % colors.length;
+    }, 600); 
+	
+function login() {
+    let email = document.getElementById("i1").value;
+    let pass = document.getElementById("i2").value;
+    let err = document.getElementById("error");
+
+    if(email === "" || pass === ""){
+        err.textContent = "Please fill in all fields";
+        return;
+    }
+
+    // Պարզ ստուգում (ոչ իրական login)
+    if(email === "test@gmail.com" && pass === "1234"){
+        window.location.href = "topoat.html";
+    } else {
+        err.textContent = "Սխալ email կամ գաղտնաբառ";
+    }
+}
+</script>
+
+</body>
+
+</html>

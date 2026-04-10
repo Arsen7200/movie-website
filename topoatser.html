@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="topoatser.css">
+    <title>KinoLuxe</title>
+
+  
+</head>
+<body>
+
+<a href="index1.html" class="a1" id="logo">KinoLuxe</a>
+<select class="bodycolor">
+<option value="RosyBrown" class="Rosy">RosyBrown</option>
+    <option value="CadetBlue" class="Cadet">CadetBlue</option>
+    <option value="DarkSalmon" class="Salmon">DarkSalmon</option>
+    <option value="RebeccaPurple" class="Rebecca">RebeccaPurple</option>
+    
+    <option value="brown" class="Brown">Brown</option>
+</select>
+<div class="buttons">
+<button class="topoat" onclick="location.href='topoat.html'">Top Movies of all time</button>
+<button class="top" onclick="location.href='main.html'">Top Movies Now</button>
+<button class="new" onclick="location.href='newmovies.html'">New Movies</button>
+<button class="topseries" onclick="location.href='topoatser.html'">Top Series of all time</button>
+<button class="newseries" onclick="location.href='newser.html'">New Series</button>
+<button class="create" onclick="location.href='cr.html'">Create your movie cover</button>
+</div>
+<div class="movies">
+    <div class="movie-card1">
+	<a href="https://kinogo.ec/32002-mezhdu.html">
+        <img id="bet" src="bet.jpg" alt="Between" >
+		</a>
+        <p>Between</p>
+		<div class="descr">
+		<p class="desc">Between is a Canadian science fiction drama television series which debuted on Citytv on May 21, 2015. Created by Michael
+		McGowan, the series stars Jennette McCurdy as Wiley Day, a pregnant teenage daughter of a minister living in the small town of Pretty Lake,
+		which is coping with a mysterious disease that has killed everybody age 22 and older</p>
+		</div>
+		<button id="Like1">Like</button>
+		<p id="p1">0</p>
+    </div>
+
+    <div class="movie-card2">
+	<a href="https://kinogo.ec/9564-ochen-strannye-dela-2.html">
+        <img id="st1" src="st1.jpg" alt="Stranger Things">
+		</a>
+        <p>Stranger Things</p>
+		<div class="descr">
+		<p class="desc">Stranger Things is an American television series created by the Duffer Brothers for Netflix. Produced by Monkey Massacre 
+		Productions and 21 Laps Entertainment, the first season was released on Netflix on July 15, 2016. The second and third seasons followed in 
+		October 2017 and July 2019, respectively, and the fourth season was released in two parts in May and July 2022. The fifth and final season is
+		being released in three parts in November and December 2025. The show is a mix of horror, science fiction, mystery, fantasy and coming-of-age
+		drama.</p>
+		</div>
+	<button id="Like2">Like</button>
+		<p id="p2">0</p>
+    </div>
+	<div class="movie-card3">
+	<a href="https://kinogo.ec/8496-lucifer-l3.html">
+        
+		
+        <img id="luc" src="luc.jpg" alt="Lucifer">
+		</a>
+        <p>Lucifer</p>
+		<div class="descr">
+		<p class="desc">Lucifer is an American urban fantasy television series developed by Tom Kapinos that began airing on January 25, 2016, and 
+		concluded on September 10, 2021. It revolves around Lucifer Morningstar (Tom Ellis), an alternate version of the DC Comics character of the 
+		same name created by Neil Gaiman, Sam Kieth and Mike Dringenberg. In the series, Lucifer, the devil, abandons Hell to run a nightclub in Los 
+		Angeles, subsequently experiencing massive life changes when he becomes a consultant to the Los Angeles Police Department. The supporting cast
+		includes Lauren German, Kevin Alejandro, D. B. Woodside, Lesley-Ann Brandt, Rachael Harris and Aimee Garcia.</p>
+		</div>
+	<button id="Like3">Like</button>
+		<p id="p3">0</p>
+    </div>
+	<div class="movie-card4">
+	<a href="https://kinogo.ec/7765-kobra-kaj-1.html">
+        <img id="ck" src="ck.jpg" alt="Cobra Kai">
+		</a>
+        <p>Cobra Kai</p>
+		<div class="descr">
+		<p class="desc">Cobra Kai is an American martial arts comedy drama television series created by Josh Heald, Jon Hurwitz, and Hayden 
+		Schlossberg, and distributed by Sony Pictures Television. It serves as a sequel to the first three The Karate Kid films created by Robert Mark
+		Kamen.[1] Cobra Kai premiered on May 2, 2018, and concluded on February 13, 2025, after six seasons consisting of 65 episodes. Originally 
+		released on YouTube Red / YouTube Premium for its first two seasons, the series later moved to Netflix.</p>
+		</div>
+	<button id="Like4">Like</button>
+		<p id="p4">0</p>
+    </div>
+	<div class="movie-card5">
+	<a href="https://kinogo.ec/39414-ted-lasso-t1.html">
+        
+		
+        <img id="ted" src="ted.jpg" alt="Ted Lasso">
+		</a>
+        <p>Ted Lasso</p>
+		<div class="descr">
+		<p class="desc">Ted Lasso (/ˈlæsoʊ/ LASS-oh) is an American sports comedy-drama television series developed by Jason Sudeikis, Bill Lawrence, 
+		Brendan Hunt, and Joe Kelly. It is based on a character Sudeikis portrayed in a series of promotional media for NBC Sports' coverage of 
+		England's soccer Premier League. The show follows Ted Lasso, an American college football coach who is hired to coach an English soccer team 
+		whose owner secretly hopes his inexperience will lead it to failure; instead, Lasso's folksy, optimistic leadership proves unexpectedly 
+		successful. The first season of 10 episodes premiered on Apple TV+ on August 14, 2020, with the first three episodes releasing immediately. 
+		A second season of 12 episodes followed on July 23, 2021, with the third season released on March 15, 2023. It was announced in March 2025 
+		that the series had been renewed for a fourth season. </p>
+		</div>
+	<button id="Like5">Like</button>
+		<p id="p5">0</p>
+    </div>
+</div>
+<script>
+    const logo = document.getElementById("logo");
+let bgcolor= document.querySelector(".bodycolor")
+    bgcolor.addEventListener("change", ()=>{
+        document.body.classList.add("hide-bg");
+        document.body.style.backgroundColor=bgcolor.value
+ 
+    })
+    
+    const colors = ["red", "magenta", "gold", "lightblue"];
+
+    let i = 0;
+
+    setInterval(() => {
+        logo.style.color = colors[i];
+        i = (i + 1) % colors.length;
+    }, 600); 
+	function addLike(butId, p1) { 
+    const but = document.getElementById(butId);
+    const p = document.getElementById(p1);
+    but.addEventListener("click", () => {
+        p.innerHTML = Number(p.innerHTML) + 1;
+    });
+   
+}
+addLike("Like1", "p1");
+addLike("Like2", "p2");
+addLike("Like3", "p3");
+addLike("Like4", "p4");
+addLike("Like5", "p5");
+</script>
+
+</body>
+</html>

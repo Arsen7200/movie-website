@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>KinoLuxe</title>
+</head>
+<body>
+
+	<a href="file:///D:/Рабочий стол/praktika proekt/index1.html" class="a1" id="logo">KinoLuxe</a>
+	
+	<button class="b1" onclick="location.href='signin.html'">Sign In</button>
+
+<div class="d">
+	
+	<p class="a3"><b>Unlimited movies,TV <br> shows, and more</b></p>
+	<div class="d1">
+	
+	<p class="a5">Ready to watch? Enter your email to create or restart your membership.</p>
+</div>
+</div>
+	<div class="i">
+		<input type="email" placeholder="Enter yoru Email">
+		<button class="g" onclick="location.href='topoat.html'">Get Started</button>
+	</div>
+
+
+<script>
+    const logo = document.getElementById("logo");
+
+    
+    const colors = ["red", "magenta", "gold", "lightblue"];
+
+    let i = 0;
+
+    setInterval(() => {
+        logo.style.color = colors[i];
+        i = (i + 1) % colors.length;
+    }, 600); 
+</script>	
+</body>
+</html>

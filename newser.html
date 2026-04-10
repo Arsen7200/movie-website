@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="newser.css">
+    <title>KinoLuxe</title>
+
+  
+</head>
+<body>
+
+<a href="index1.html" class="a1" id="logo">KinoLuxe</a>
+<select class="bodycolor">
+<option value="Brown" class="Brown">Brown</option>
+    <option value="CadetBlue" class="Cadet">CadetBlue</option>
+    <option value="DarkSalmon" class="Salmon">DarkSalmon</option>
+    <option value="RebeccaPurple" class="Rebecca">RebeccaPurple</option>
+    <option value="RosyBrown" class="Rosy">RosyBrown</option>
+    
+</select>
+<div class="buttons">
+<button class="topoat" onclick="location.href='topoat.html'">Top Movies of all time</button>
+<button class="top" onclick="location.href='main.html'">Top Movies Now</button>
+<button class="new" onclick="location.href='newmovies.html'">New Movies</button>
+<button class="topseries" onclick="location.href='topoatser.html'">Top Series of all time</button>
+<button class="newseries" onclick="location.href='newser.html'">New Series</button>
+<button class="create" onclick="location.href='cr.html'">Create your movie cover</button>
+</div>
+<div class="movies">
+    <div class="movie-card1">
+	<a href="https://kinogo.bike/49071-cennyj-kadr.html">
+        <img id="asset" src="asset.jpg" alt="The Asset" >
+		</a>
+        <p>The Asset</p>
+		<div class="descr">
+		<p class="desc">The Asset (Danish: Legenden) is a Danish-language espionage crime drama that premiered globally on Netflix on 27 October 2025. 
+		It was directed by Samanou Acheche Sahlstrøm and Kasper Barfoed. Sahlstrøm was also head writer of the series along with Frederik Ringtved and
+		Adam August. The leading role of Tea Lind is played by Clara Dessau. Tea Lind is a troubled police cadet who is recruited by the Danish Security
+		and Intelligence Service (PET), to go undercover in the criminal underworld. Tea poses as a jeweler to befriend Ashley, the girlfriend of crime-boss Miran,
+		with the goal of infiltrating his organization. But the deeper Tea becomes involved, the more the lines between her mission and her identity blur.</p>
+		</div>
+		<button id="Like1">Like</button>
+		<p id="p1">0</p>
+    </div>
+
+    <div class="movie-card2">
+	<a href="https://kinogo.bike/49082-chudovische-vnutri-menja-zver-vo-mne.html">
+        <img id="beast" src="beast.jpg" alt="The Beast in Me">
+		</a>
+        <p>The Beast in Me</p>
+		<div class="descr">
+		<p class="desc">The Beast in Me is an American psychological crime thriller television miniseries for Netflix, starring Claire Danes and 
+		Matthew Rhys. Created by Gabe Rotter, the series follows an author (Danes) who begins writing a book about her new next-door neighbor (Rhys), 
+		a real estate executive who allegedly killed his wife. Executive producers on the series include Jodie Foster and Conan O'Brien. The series 
+		premiered on November 13, 2025, and received generally positive reviews.</p>
+		</div>
+	<button id="Like2">Like</button>
+		<p id="p2">0</p>
+    </div>
+	<div class="movie-card3">
+	<a href="https://kinogo.bike/49122-poveliteli-fortuny.html">
+        
+		
+        <img id="ruler" src="ruler.jpg" alt="Rulers of Fortune">
+		</a>
+        <p>Rulers of Fortune</p>
+		<div class="descr">
+		<p class="desc">Rulers of Fortune is a Netflix crime thriller series about an underdog named Profeta who tries to take over Rio de Janeiro's 
+		criminal gambling syndicate from powerful families. The show follows his dangerous rise through the world of illegal gambling, navigating a 
+		treacherous landscape of betrayal, lust, and deceit. The narrative centers on the power struggle between established crime families and 
+		Profeta's ambition to control the city.</p>
+		</div>
+	<button id="Like3">Like</button>
+		<p id="p3">0</p>
+    </div>
+	<div class="movie-card4">
+	<a href="https://kinogo.bike/26664-skandal-evy-eva.html">
+        <img id="eve" src="eve.jpg" alt="Scandal Eve">
+		</a>
+        <p>Scandal Eve</p>
+		<div class="descr">
+		<p class="desc">Scandal Eve is a 2025 Japanese mystery drama about a talent agency president who must race against time to stop a tabloid from
+		publishing a career-ending scandal about her client. The show stars Kô Shibasaki as the agency president, and the plot involves her clashing 
+		with the determined reporter and digging into a larger conspiracy within the entertainment industry. The series is available to stream on 
+		Netflix.</p>
+		</div>
+	<button id="Like4">Like</button>
+		<p id="p4">0</p>
+    </div>
+	<div class="movie-card5">
+	<a href="https://kinogo.ec/123603-soblaznenie.html">
+        
+		
+        <img id="sed" src="sed.jpg" alt="The Seduction">
+		</a>
+        <p>The Seduction</p>
+		<div class="descr">
+		<p class="desc">The Seduction (know as Merteuil in France) is a French television series created by Jean-Baptiste Delafon, based on Pierre
+		Choderlos de Laclos's epistolary novel Les Liaisons dangereuses. It stars Anamaria Vartolomei, Diane Kruger, Vincent Lacoste, and Lucas Bravo.
+		The series is both a prequel and a loose adaptation of the plot of the novel, and follows Isabelle de Merteuil (Vartolomei) as she is trying 
+		to get revenge on the Vicomte de Valmont (Lacoste) after he betrayed her. The series production was announced by HBO Max in September 2024 
+		with Nabi Productions and Felicita Films serving as producers. Filming took place mainly in Val-d'Oise between September and December 2024.
+		Originally announced as an Max Original, it was rebranded as an HBO Original in October 2025. The Seduction premiered in France on 14 November
+		2025 on HBO Max's HBO hub. </p>
+		</div>
+	<button id="Like5">Like</button>
+		<p id="p5">0</p>
+    </div>
+</div>
+<script>
+    const logo = document.getElementById("logo");
+let bgcolor= document.querySelector(".bodycolor")
+    bgcolor.addEventListener("change", ()=>{
+        document.body.classList.add("hide-bg");
+        document.body.style.backgroundColor=bgcolor.value
+ 
+    })
+    
+    const colors = ["red", "magenta", "gold", "lightblue"];
+
+    let i = 0;
+
+    setInterval(() => {
+        logo.style.color = colors[i];
+        i = (i + 1) % colors.length;
+    }, 600); 
+	function addLike(butId, p1) { 
+    const but = document.getElementById(butId);
+    const p = document.getElementById(p1);
+    but.addEventListener("click", () => {
+        p.innerHTML = Number(p.innerHTML) + 1;
+    });
+   
+}
+addLike("Like1", "p1");
+addLike("Like2", "p2");
+addLike("Like3", "p3");
+addLike("Like4", "p4");
+addLike("Like5", "p5");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+html, body {
+    height: auto;
+    overflow-y: auto;
+}
+body {
+    position: relative;
+    min-height: 100vh; 
+    width: 100%;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-color: Brown;
+    opacity: 0.9; 
+    z-index: -1; 
+}
+body.hide-bg::before {
+    display: none;
+}
+.a1 {
+    	position: relative;
+	z-index: 1;
+margin-left: 150px;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+    font-weight: bold;
+	margin-top:30px;
+	text-decoration: none;
+            font-size: 30px;
+            transition: color 1s linear;
+        
+}
+.topoat {
+	width:150px;
+	height:30px;
+	color: white;
+	background-color:grey;
+}
+.top {
+	width:150px;
+	height:30px;
+	color: white;
+	background-color:grey;
+}
+.new {
+	width:150px;
+	height:30px;
+	color: white;
+	background-color:grey;
+}
+.topseries {
+	width:150px;
+	height:30px;
+	color: white;
+	background-color:grey;
+}
+.newseries {
+	width:150px;
+	height:30px;
+	color: white;
+	background-color:grey;
+}
+.create {
+	width:170px;
+	height:30px;
+	color: white;
+	background-color:grey;
+}
+.buttons {
+	margin-top: 30px;
+	text-align: center;
+	
+}
+#poster {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color:black;
+	width:491px;
+	height:580px;
+	margin-left:691px;
+	margin-top:55px;
+	margin-bottom: 100px;
+	color:white;
+	padding: 10px;
+}
+#movauthor {
+	align-self: flex-end;  
+	margin-bottom: 20px;  
+  }
+  
+  #addmessage, #reldate, #actors {
+	flex-grow: 0; 
+  }
+
+#forms {
+    width: 260px;
+	margin-left:297px;	
+	margin-top:-697px;
+}
+
+ .det {
+    
+    width: 250px; 
+height:20px;	
+    margin-bottom: 12px;
+}
+#generateBtn {
+	width:258px;
+	height:31px;
+	background-color:grey;
+	color:white;
+}
+#movname {
+	font-size: 2em;
+	text-align: center;
+}
+#posterForm{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+justify-content: start;
+}
+.Brown {
+	background-color: Brown;
+	color:white;
+}
+.Rosy {
+	background-color: RosyBrown;
+	color:white;
+}
+.Cadet {
+	background-color: CadetBlue;
+	color:white;
+}
+.Salmon {
+	background-color: DarkSalmon;
+	color:white;
+}
+.Rebecca {
+	background-color: RebeccaPurple;
+	color:white;
+}
+.bodycolor {
+	margin-left:72%;
+	width:150px;
+	height:30px;
+	background-color:white;
+	
+}
+#actors {
+	font-size: 25px;
+}

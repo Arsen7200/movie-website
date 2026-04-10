@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="create.css">
+    <title>KinoLuxe</title>
+</head>
+<body>
+<a href="index1.html" class="a1" id="logo">KinoLuxe</a>
+<select class="bodycolor">
+<option value="Brown" class="Brown">Brown</option>
+    <option value="CadetBlue" class="Cadet">CadetBlue</option>
+    <option value="DarkSalmon" class="Salmon">DarkSalmon</option>
+    <option value="RebeccaPurple" class="Rebecca">RebeccaPurple</option>
+    <option value="RosyBrown" class="Rosy">RosyBrown</option>
+	
+</select>
+
+<div class="buttons">
+<button class="topoat" onclick="location.href='topoat.html'">Top Movies of all time</button>
+<button class="top" onclick="location.href='main.html'">Top Movies Now</button>
+<button class="new" onclick="location.href='newmovies.html'">New Movies</button>
+<button class="topseries" onclick="location.href='topoatser.html'">Top Series of all time</button>
+<button class="newseries" onclick="location.href='newser.html'">New Series</button>
+<button class="create" onclick="location.href='cr.html'">Create your movie cover</button>
+</div> 
+
+<div id="poster">
+<div id="actors">Your movie actors</div>
+<h1 id="movname">Your movie title</h1>
+<div id="addmessage">Add message about your movie</div>
+
+
+<div id="movauthor">Your movie director</div>
+<div id="reldate">Your movie release date</div>
+</div>
+
+<div id="forms">
+<form id="posterForm">
+        <h2>Fill movie details</h2>
+        <label class="det">Movie title</label>
+        <input class="det" type="text" id="titleInput" placeholder="Movie Title">
+		
+        <label class="det">Movie director</label>
+        <input class="det" type="text" id="directorInput" placeholder="Director Name">
+
+        <label class="det">Actors</label>
+        <input class="det" type="text" id="actorsInput" placeholder="Actor 1, Actor 2">
+
+        <label class="det">Release date</label>
+        <input class="det" type="text" id="dateInput" placeholder="01.01.2025">
+		
+		<label class="det">Message about your movie</label>
+        <input class="det" type="text" id="messageInput" placeholder="Message">
+		<button type="button" id="generateBtn">Create poster</button>
+</form>
+</div>
+        
+<script>
+    const logo = document.getElementById("logo");
+	
+	const titleInput= document.getElementById("titleInput")
+	const directorInput= document.getElementById("directorInput")
+	const actorsInput= document.getElementById("actorsInput")
+	const dateInput= document.getElementById("dateInput")
+	const generateBtn= document.getElementById("generateBtn")
+	
+	const actorsField = document.getElementById("actors");
+
+
+generateBtn.addEventListener("click", () => {
+    movname.textContent = titleInput.value || "Your movie title";
+    movauthor.textContent = directorInput.value || "Your movie director";
+    addmessage.textContent = messageInput.value || "Add message about your movie";
+    reldate.textContent = dateInput.value || "Your movie release date";
+
+    
+    let actors = actorsInput.value.split(",").map(a => a.trim()).filter(a => a);
+    actorsField.textContent = actors.length ? actors.join(", ") : "Your movie actors";
+});
+let bgcolor= document.querySelector(".bodycolor")
+    bgcolor.addEventListener("change", ()=>{
+        document.body.classList.add("hide-bg");
+        document.body.style.backgroundColor=bgcolor.value
+ 
+    })
+    
+	
+    const colors = ["red", "magenta", "gold", "lightblue"];
+
+let i=0;
+    setInterval(() => {
+        logo.style.color = colors[i];
+        i = (i + 1) % colors.length;
+    }, 600); 
+
+</script>
+
+</body>
+</html>
