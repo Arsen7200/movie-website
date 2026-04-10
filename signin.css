@@ -1,5 +1,71 @@
+@media screen and (max-width: 800px) {
+    body {
+        overflow-y: auto !important; 
+        overflow-x: hidden !important;
+    }
 
-body {
+    
+    .a1 {
+        margin-left: 0 !important;
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    
+    .d1 {
+        width: 90% !important; 
+        height: auto !important; 
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 30px !important;
+        padding-bottom: 40px !important; 
+    }
+
+    
+    .p1 {
+        margin-left: 0 !important;
+        text-align: center !important;
+        padding-top: 30px !important;
+    }
+
+    
+    #i1, #i2 {
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    
+    .b1 {
+        width: 85% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    
+    .i3 {
+        margin-left: 10% !important; 
+    }
+
+    .p2 {
+        display: inline-block !important;
+        margin-left: 10px !important;
+        margin-top: 31px !important; 
+    }
+
+    
+    #error {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+}
+
+
+        body {
     position: relative;
     min-height: 100vh; 
     width: 100%;
@@ -20,50 +86,50 @@ body::before {
     z-index: -1; 
 }
 .a1 {
-    	position: relative;
-	z-index: 1;
+        position: relative;
+    z-index: 1;
 margin-left: 150px;
-	display: inline-block;
-	font-family: Arial, sans-serif;
+    display: inline-block;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-	margin-top:30px;
-	text-decoration: none;
+    margin-top:30px;
+    text-decoration: none;
             font-size: 30px;
             transition: color 1s linear;
         
 }
 
 .d1 {
-	width:470px;
-	height:700px;
-	opacity:0.7;
-	background-color:black;
-	margin-left:741px;
-	margin-top:37px;
-	color: white;
+    width:470px;
+    height:700px;
+    opacity:0.7;
+    background-color:black;
+    margin-left:741px;
+    margin-top:37px;
+    color: white;
 }
 .p1 {
-	font-size:30px;
-	margin-left:54px;
-	padding-top: 51px;
+    font-size:30px;
+    margin-left:54px;
+    padding-top: 51px;
 }
 #i1 {
-	width:294px;
-	height:40px;
-	margin-left:54px;
-	border-radius: 5px;
-	padding-left:15px;
+    width:294px;
+    height:40px;
+    margin-left:54px;
+    border-radius: 5px;
+    padding-left:15px;
 }
 #i2{
-	width:294px;
-	padding-left:15px;
-	height:40px;
-	margin-left:54px;
-	margin-top:19px;
-	border-radius: 5px;
+    width:294px;
+    padding-left:15px;
+    height:40px;
+    margin-left:54px;
+    margin-top:19px;
+    border-radius: 5px;
 }
 
-	.b1 {
+    .b1 {
     width: 316px;
     height: 40px;
     margin-left: 54px;
@@ -78,21 +144,21 @@ margin-left: 150px;
     transition: 0.3s;
 
     background-color: rgba(128, 0, 255, 0.7); 
-	font-size:17px;
-	display:block;
+    font-size:17px;
+    display:block;
 }
 .i3 {
-	margin-left:54px;
-	margin-top:31px;
-	display:inline-block;
+    margin-left:54px;
+    margin-top:31px;
+    display:inline-block;
 }
 .p2 {
-	margin-left:72px;
-	margin-top:-20px;
+    margin-left:72px;
+    margin-top:-20px;
 }
 
 #error {
-	color: red;
-	margin-top: 10px;
-	margin-left:54px;
+    color: red;
+    margin-top: 10px;
+    margin-left:54px;
 }
